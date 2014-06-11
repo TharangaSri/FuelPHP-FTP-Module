@@ -1,0 +1,270 @@
+
+.FtpDiv{
+	padding:5px;
+}
+
+.hidetd
+{
+    display: none;
+}
+
+#module_top_menuFTP{
+	background-color:#E4E4C9;
+	width:100%;
+	margin-bottom:50px;
+		
+}
+
+.pathboxtr{
+	background-image: url(../img/ftp/upbar.png);
+
+}
+
+#file_list{
+	margin:10px;
+	padding:5px;
+}
+
+.selected td{
+	background-color:#ECEBFA;
+	font-weight:bold;
+}
+
+
+.iconClass{
+	width:25px;
+	height:25px;
+}
+
+.goBack{
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor:pointer;
+	margin-left:15px;
+	}
+	
+.CreateFolder{
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor:pointer;
+		margin:5px;
+}
+
+.refrishIcon{
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor:pointer;
+	margin:5px;
+}
+
+.addFile{
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor:pointer;
+		margin:5px;
+}
+
+.delete_f{
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor:pointer;
+}
+
+.edit{
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor:pointer;
+}
+
+.btn_a{
+	height: 25px;
+	margin: 5px;
+	padding: 10px;
+	width: 25px;
+	background-color: #CC6;
+	border: 1px solid #FFF;	
+}
+	
+.current_path_show{
+	font-weight:bold;
+	font-size:12px;
+	text-decoration:underline;
+	color:#666;
+}
+
+
+
+#grid_boxFTP{
+	margin-top:-50px;
+	padding-left:50px;
+	background-color:#FFFFFF;
+	height:500px;
+	overflow:auto;
+	
+}
+
+#taskbar{
+	background-image: url(../img/ftp/task.png);
+	height:55px;
+}
+
+.ftpgrid{
+	background-color:#FFFFFF;
+}
+
+#DataTables_Table_0_wrapper{
+   border:1px solid #FFFFFF;
+
+}
+
+
+.dataTables_empty{
+	height:500px;
+}
+
+.dataTables_empty:hover{
+	background-color:#FFF !important;
+}
+
+
+#DataTables_Table_0_paginate{
+	display:none;
+}
+
+#DataTables_Table_0_length{
+	display:none;
+}
+
+#SelectPath{
+	width:80%;
+	margin-left:15px;
+	padding:3px;
+}
+
+td.highlight { background-color: whitesmoke !important; }
+
+/* images */
+.jpg,.JPG, 
+.png,.PNG, 
+.gif, .GIF,
+.svg, .SVG,
+.jpeg, .JPEG
+{
+	background-image: url(../img/ftp/jpg.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+
+
+/* text file */
+.txt, .TXT
+{
+	background-image: url(../img/ftp/txt.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* html file */
+.html, .HTML,
+.htm, .HTM
+{
+	background-image: url(../img/ftp/html.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* exe file */
+.exe, .EXE
+{
+	background-image: url(../img/ftp/exe.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* zip file */
+.zip, .ZIP
+{
+	background-image: url(../img/ftp/zip.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* word file */
+.doc, .DOC,
+.dotx, .DOTX,
+.docx, .DOCX,
+.dot, .DOT
+{
+	background-image: url(../img/ftp/w.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* Excel file */
+.xlsx, .XLSX
+{
+	background-image: url(../img/ftp/x.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* Excel file */
+.php, .PHP
+{
+	background-image: url(../img/ftp/php.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* PDF file */
+.pdf, .PDF
+{
+	background-image: url(../img/ftp/pdf.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.folder{
+	background-image: url(../img/ftp/f.png);
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+
+
+.highlight td{
+    background-color: #E6E6FF !important;
+}
