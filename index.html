@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Fuelphp-ftp-module : Using this FTP Module you can manage files and folders by remotely. This module develop using FuelPHP framework." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Fuelphp-ftp-module</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/TharangaSri/FuelPHP-FTP-Module">View on GitHub</a>
+
+          <h1 id="project_title">Fuelphp-ftp-module</h1>
+          <h2 id="project_tagline">Using this FTP Module you can manage files and folders by remotely. This module develop using FuelPHP framework.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/TharangaSri/FuelPHP-FTP-Module/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/TharangaSri/FuelPHP-FTP-Module/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="fuelphp-ftp-module" class="anchor" href="#fuelphp-ftp-module"><span class="octicon octicon-link"></span></a>FuelPHP-FTP-Module</h3>
+
+<h1></h1>
+
+<p>Using this FTP Module you can manage files and folders by remotely. This module develop using FuelPHP framework.</p>
+
+<p>To setup ftp server IP you need to navigate </p>
+
+<pre><code> "C:\inetpub\wwwroot\FuelPHP-FTP-Manager\fuel\app\modules\FtpFile\classes\controller\FtpFile.php
+</code></pre>
+
+<p>Open the FtpFile.php and change the ftp server Ip </p>
+
+<pre><code> // create an ftp object, but don't connect
+        $this-&gt;ftp = \Fuel\Core\Ftp::forge(array(
+            'hostname' =&gt; '192.168.1.3',
+            'username' =&gt; 'tharanga',
+            'password' =&gt; '8420',
+            'timeout'  =&gt; 90,
+            'port'     =&gt; 21,
+            'passive'  =&gt; true,
+            'ssl_mode' =&gt; false,
+            'debug'    =&gt; false
+        ), false);
+</code></pre>
+
+<h3>
+<a name="fuelphp-ftp-interface-info" class="anchor" href="#fuelphp-ftp-interface-info"><span class="octicon octicon-link"></span></a>FuelPHP-FTP Interface Info</h3>
+
+<p>Here is the some interface images. </p>
+
+<p><img src="http://filezillion.com/github/image003.png" alt="Main interface img"></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Fuelphp-ftp-module maintained by <a href="https://github.com/TharangaSri">TharangaSri</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
