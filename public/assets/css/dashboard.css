@@ -599,6 +599,8 @@ ul.icons_grid li a {
 	font-size: 13px;
 }*/
 
+
+
 .administration, ul.icons_grid li a {
 	/*width: 90%;	*/
 	height: 143px;	
@@ -607,7 +609,8 @@ ul.icons_grid li a {
 	font-weight: bold;
 	text-align: center;
 	font-size: 13px;
-        margin-bottom: 20px;        
+        margin-bottom: 20px;  
+    
 }
 
 ul.icons_grid li {
@@ -618,7 +621,6 @@ ul.icons_grid li {
 	display: none;
 }
 .dash_back_large{
-        background-image: url(../img/dashboard/bg.png);
 	background-repeat: no-repeat;
 	background-position: center center;
         /*background-size:100% 100%;*/
@@ -628,7 +630,6 @@ ul.icons_grid li {
          
 }
 .dash_back_small{
-        background-image: url(../img/dashboard/_bg.png);
 	background-repeat: no-repeat;
 	/*background-position: center center;*/
        /*background-size:100% 100%;*/
@@ -636,6 +637,7 @@ ul.icons_grid li {
 	padding:20px;
         float: left;
         min-height: 550px;
+width:800px; margin:0 auto;
         
 }
 

@@ -54,6 +54,13 @@ input[type="button"]{  min-height:12px; cursor:pointer;}
 	color:#00F;
 }
 
+
+#frmSetupNetworkDrive_div input, #frmSetupNetworkDrive_div select {
+	margin:4px;
+}
+
+
+
 #DataTables_Table_0_paginate{
 	bottom: 8%;
     float: right;

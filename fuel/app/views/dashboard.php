@@ -67,10 +67,16 @@
           
           <div id="dash_back" class="dash_back_small" >
 		<ul class="icons_grid">
+        
+        <li class="contacts">
+				<a  class="win" url="#" win_width="1100" win_height="650" id="btn2" type="button" title="frmInsertExam" win_scrolling="0"  href="#" win_resize="0" ><?php echo \Asset::img('dashboard/System-settings-icon.png'); ?>
+					<span>FTP Settings</span>
+				</a>
+			</li>
 			
 <li class="contacts">
 				<a  class="win" url="#" win_width="1100" win_height="650" id="btn1" type="button" title="frmInsertExam" win_scrolling="0"  win_resize="0" href="<?php echo \Uri::create('FtpFile'); ?>"><?php echo \Asset::img('dashboard/Smart-FTP-icon.png'); ?>
-					<span>FTP Manager</span>
+					<span>Browse Files</span>
 				</a>
 			</li>
 			
@@ -85,6 +91,43 @@
         
 		
 	</div>
-	
+
+
+ <script>
+ $(document).ready(function() {
+		 $("#dialog").dialog({
+				 autoOpen: false,
+				 bgiframe: true,
+				 minHeight: 85,
+				 width: 330,
+				 modal: false,
+				 draggable: true,
+				 resizable: false,
+				 position: 'center',
+				 show: {
+					 effect: "fade",
+					 duration: 1000
+				 },
+				 hide: {
+					 effect: "fade",
+					 duration: 500
+				 },
+				 open: function (type, data) {
+					 $(this).parent().appendTo("form");
+				 }
+			 });
+			 
+	 $('#btn2').on('click',function(){
+		$('#dialog').dialog('open');
+	 });
+	 
+ })
+</script>
+
+<div id="dialog" title="FTP Settings" style=" height:350px; width:100%;">
+<p>
+<iframe width="100%" height="350px" src="<?php echo \Uri::create('FtpFile/frmSetupNetworkDrive');?>"></iframe>
+</p>
+</div>
 </body>
 </html>

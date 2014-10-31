@@ -11,12 +11,12 @@ class Controller_FtpFile extends \Controller_Base {
          	
         // create an ftp object, but don't connect
         $this->ftp = \Fuel\Core\Ftp::forge(array(
-            'hostname' => '192.168.1.3',
-            'username' => 'tharanga',
-            'password' => '8420',
-            'timeout'  => 90,
-            'port'     => 21,
-            'passive'  => true,
+            'hostname' => \Session::get('Settings.txt_ip_address'),
+            'username' => \Session::get('Settings.txt_username'),
+            'password' => \Session::get('Settings.txt_password'),
+            'timeout'  => \Session::get('Settings.txt_FTPtimeout'),
+            'port'     => \Session::get('Settings.txt_FTPport'),
+            'passive'  => \FtpFile\Controller_FtpFile::trueFalse(\Session::get('Settings.sel_FTPpassive')),
             'ssl_mode' => false,
             'debug'    => false
         ), false);
@@ -25,6 +25,71 @@ class Controller_FtpFile extends \Controller_Base {
 
         // now connect to the server
         return $this->ftp->connect();
+    }
+    
+      function  testConnect() {
+         	
+        // create an ftp object, but don't connect
+        $this->ftp = \Fuel\Core\Ftp::forge(array(
+            'hostname' => \Session::get('Settings.txt_ip_address'),
+            'username' => \Session::get('Settings.txt_username'),
+            'password' => \Session::get('Settings.txt_password'),
+            'timeout'  => \Session::get('Settings.txt_FTPtimeout'),
+            'port'     => \Session::get('Settings.txt_FTPport'),
+            'passive'  => \FtpFile\Controller_FtpFile::trueFalse(\Session::get('Settings.sel_FTPpassive')),
+            'ssl_mode' => false,
+            'debug'    => false
+        ), false);
+
+        // do some stuff here
+
+        // now connect to the server
+        return $this->ftp->connect();
+    }
+    
+    
+    public  function trueFalse($value){
+        if($value=='true'){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    
+    
+    
+    
+    function action_frmSetupNetworkDrive(){
+        
+        if(\Input::param('ajaxTest')){
+            $data = \Input::all();
+            \Session::set('Settings',$data);
+            if($this->testConnect()){
+                
+                $json = array(
+                    //  'sEcho' => (int) \Input::get('sEcho'),
+                      'success' => 'success',
+                      'Data' => 'Successfully Connect!',
+                  );
+              echo json_encode($json);exit;
+
+             }else{
+               $json = array(
+                //  'sEcho' => (int) \Input::get('sEcho'),
+                  'success' => 'success',
+               // 'Data' => $ftpConnect,
+                  'Data' => 'Connection Fail!',
+                  );
+              echo json_encode($json);exit; 
+            }
+        }
+        
+        $data = \Session::get('Settings');
+        $this->set_filebrowser_template();
+        $view = \View::forge('frmSetupNetworkDrive');
+        $view->set('data',$data);
+        $this->template->content = $view;
     }
     
     

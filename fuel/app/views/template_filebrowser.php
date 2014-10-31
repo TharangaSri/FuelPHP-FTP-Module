@@ -61,13 +61,7 @@
         <?php echo $content; ?>
     
        
-        <div id="footer">
-
-            <p class="ver">
-                <?php Config::load('deployment', true); ?>
-                <?php echo Config::get('deployment.version_number'); ?>    <?php echo Config::get('deployment.timestamp'); ?>  | <?php echo Config::get('deployment.version'); ?>                
-            </p>
-        </div>
+   
     
         <div id="ajax-load">
             <?php echo Asset::img('ajax_loader.gif'); ?>
